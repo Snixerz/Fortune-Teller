@@ -1,0 +1,29 @@
+
+{% block content %}
+
+<p class="fortune"> Welcome to fortune teller, {{fortune["name"]}}! </p>
+<br>
+<p class="fortune">
+    {% if fortune['name'] == 'Andrew' %}
+        We are pretty similar :)
+        <br>
+    {% endif %}
+    {% if fortune['drink'] == 'Soda' %}
+        Bet you like sugar.
+        <br>
+    {% endif %}
+    {% if fortune['animal'] == 'Cat' %}
+        You will have a wondeful day!
+        <br>
+    {% endif %}
+    {% if fortune['city'] == 'city2' %}
+        You will find a penny on the ground.
+        <br>
+    {% endif %}
+    {% if fortune['animal'] == 'Dog' %}
+        You will laugh in one hour.
+        <br>
+    {% endif %}
+</p>
+
+{% endblock %}

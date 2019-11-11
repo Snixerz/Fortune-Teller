@@ -1,0 +1,26 @@
+<form action="/fortune_results" method="get">
+  What is your name?
+  <input type='text' name='name'>
+  <br>
+  Favorite Drink?
+  <input list="drink" name="drink">
+  <datalist id="drink">
+    <option value="Soda">
+    <option value="Sprite">
+    <option value="Fanta">
+    <option value="Water">
+  </datalist>
+  <br>
+  Favorite Animal?
+  <select name="animal" form="animal">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+  </select>
+  <br>
+  What city have you visited?<br>
+  <input type="radio" name="city" value="city1">LA<br>
+  <input type="radio" name="city" value="city2">SF<br>
+  <input type="radio" name="city" value="city3">NYC<br>
+  <input type="radio" name="city" value="city4">None<br>
+  <input type="submit" action="/fortune_results">
+</form>
